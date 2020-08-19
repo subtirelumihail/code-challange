@@ -1,0 +1,15 @@
+.container {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid;
+  margin-bottom: 10px;
+}
+
+.container > div {
+  flex: 1;
+}
+
+.container > div:last-child {
+  text-align: right;
+}
