@@ -30,7 +30,7 @@ const Products = ({
 
   const handleOnSave = (product: ProductType) => {
     onSave(product);
-    setShowModal(false);
+    handleHideModal();
   };
 
   return (
