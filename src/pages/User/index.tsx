@@ -33,7 +33,7 @@ const User = (): React.ReactElement<any> => {
   };
 
   return (
-    <DynamicModuleLoader key="planning" modules={[module(id)]}>
+    <DynamicModuleLoader key="userPage" modules={[module(id)]}>
       <Header user={user} />
       <div className="content">
         <UserDetails user={user} sum={sum} />

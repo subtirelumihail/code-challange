@@ -15,7 +15,7 @@ const Dashboard = (): React.ReactElement<any> => {
     dispatch(search(e.target.value.trim()));
   };
   return (
-    <DynamicModuleLoader key="planning" modules={[module()]}>
+    <DynamicModuleLoader key="dashboardPage" modules={[module()]}>
       <Search onChange={handleSearch} />
       <UserList users={users} />
     </DynamicModuleLoader>

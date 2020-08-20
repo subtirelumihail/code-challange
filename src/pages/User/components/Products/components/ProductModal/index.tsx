@@ -29,7 +29,7 @@ const ProductModal = ({
         footer={null}
       >
         <Form
-          name="nest-messages"
+          name="product-form"
           validateMessages={validateMessages}
           initialValues={
             product ? { name: product.name, value: product.value } : {}
@@ -58,7 +58,6 @@ const ProductModal = ({
 };
 
 ProductModal.propTypes = {
-  visible: PropTypes.bool,
   onClose: PropTypes.func,
   product: PropTypes.shape({
     name: PropTypes.string,
