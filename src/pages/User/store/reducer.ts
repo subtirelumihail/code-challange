@@ -21,6 +21,7 @@ export const products = createReducer([] as ProductType[])
         if (product.id === action.payload.id) {
           return action.payload;
         }
+        return product;
       });
     }
     return [
